@@ -1,0 +1,51 @@
+header{
+	background-image: linear-gradient(to right, #001F33 60%, #8BE5E3);
+	color: #fff;
+	min-height:100px;
+	padding:5px; 
+}
+
+header nav{
+	float:right;
+	margin-top:30px;
+}
+
+header logo p{
+	float:left;
+}
+
+.nav>li>a:link, .nav>li>a:visited {
+	color: #fff !important;
+	background-color:transparent;
+	text-decoration: underline;
+}
+
+.nav>li>a:hover, .nav>li>a:active {
+	color: #f4511e !important;
+	background-color:transparent;
+	text-decoration: underline;
+}
+
+.drop-menu>li>a:link, .drop-menu>li>a:visited {
+	color: #fff !important;
+	background-color:#000;
+	text-decoration: underline;
+}
+
+.drop-menu>li>a:hover, .drop-menu>li>a:active {
+	color: #f4511e !important;
+	background-color:#000;
+	text-decoration: underline;
+}
+.jumbotron {
+	background-color: #8BE5E3;
+	color: #fff;
+	padding: 5px 50px 75px;
+	font-family: Montserrat, sans-serif;
+}
+
+footer .glyphicon {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #f4511e;
+}

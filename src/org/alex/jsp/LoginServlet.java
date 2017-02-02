@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 
 		String id, password;
-		id = request.getParameter("userId");
+		id = request.getParameter("userID");
 		password = request.getParameter("password");
 
 		GenericService<Dealer, String> loginService = new DealerServiceImpl();
@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 			if (password.equals(dealer.getPassword())) {
 				request.setAttribute("dealer", dealer);
 				RequestDispatcher dispatcher = request
-						.getRequestDispatcher("home.jsp");
+						.getRequestDispatcher("startPage.jsp");
 				dispatcher.forward(request, response);
 				return;
 			}

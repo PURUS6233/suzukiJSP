@@ -4,19 +4,19 @@
 <html>
 <head>
 <LINK rel="SHORTCUT ICON" href="favicon.ico">
-<meta HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
-<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta HTTP-EQUIV="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome to SUZUKI</title>
 </head>
+
 <script LANGUAGE="JAVASCRIPT">
 	function ValidateInput() {
 
-		if (document.frmLogin.iUserID.value.length == 0) {
+		if (document.frmLogin.userID.value.length == 0) {
 			alert("Please type your user ID");
 			return false;
 		}
 
-		if (document.frmLogin.iPassword.value.length == 0) {
+		if (document.frmLogin.password.value.length == 0) {
 			alert("Please type your password");
 			return false;
 		}
@@ -25,7 +25,7 @@
 </script>
 
 <body style="FONT-SIZE: 12pt; FONT-FAMILY: SuzukiPROBold"
-	onLoad="document.forms[0].iUserID.focus()">
+	onLoad="document.forms[0].userID.focus()">
 	<table width="98%">
 		<tr height="220">
 			<td>
@@ -75,21 +75,20 @@
 									</tr>
 								</table>
 							</div>
-							<form name="frmLogin" method="POST" action="home.jsp"
+							<form name="frmLogin" action="login" method="post"
 								onsubmit="return ValidateInput()">
 								<div
 									style="Z-INDEX: 4; left: 350px; position: absolute; TOP: 300px; background-color: white">
 									<table border="0" style="FONT-SIZE: 14pt">
 										<tr>
 											<td WIDTH="120">Логин</td>
-											<td><input type="TEXT" id="iUserID" name="iUserID"
-												size="13" maxlength="20" style="FONT-SIZE: 16pt"></td>
+											<td><input type="text" name="userID" size="13"
+												maxlength="20" style="FONT-SIZE: 16pt"></td>
 										</tr>
 										<tr>
 											<td>Пароль</td>
-											<td><input type="password" id="iPassword"
-												name="iPassword" size="13" maxlength="20"
-												style="FONT-SIZE: 16pt"></td>
+											<td><input type="password" name="password" size="13"
+												maxlength="20" style="FONT-SIZE: 16pt"></td>
 										</tr>
 										<tr>
 											<td colspan="2" align="center"><br> <input
